@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Spotify Abhishek</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left  bg-black">
+            <div class="close">
+                <img class="invert" width="35px" height="35px" src="cross.svg" alt="">
+            </div>
+            <div class="home bg-grey p-1">
+                <img class="invert" width="100px" style="margin-bottom: -1px;" src="lg.svg" alt="">
+
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home"><span>Home</span></li>
+                    <li><img class="invert" src="search.svg" alt="Search"><span>Search</span></li>
+                </ul>
+            </div>
+            <div class="library bg-grey p-1">
+                <div class="heading flex">
+                    <img src="playlist.svg" class="invert" alt="">
+                    <h4>Your Library</h4>
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav align">
+                    <img class="invert hamburger" width="30px" height="31px" src="hamburger.svg" alt="">
+                    <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
+                <svg class="invert"fill="#000000" width="10px" height="20px" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.46 357.74L147.04 255.89l218.47-101.88c16.02-7.47 22.95-26.51 15.48-42.53l-13.52-29C360 66.46 340.96 59.53 324.94 67L18.48 209.91a32.014 32.014 0 0 0-18.48 29v34.24c0 12.44 7.21 23.75 18.48 29l306.31 142.83c16.06 7.49 35.15.54 42.64-15.52l13.56-29.08c7.49-16.06.54-35.15-15.53-42.64z"/></svg> -->
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg fill="#000000" width="30px" style="transform:rotate(180deg)" class="invert" height="30px"
+                        viewBox="-128 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                    </svg>
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg fill="#000000" width="30px" class="invert" height="30px" viewBox="-128 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                    </svg>
+                </div>
+                <div class="buttons ">
+                    
+                    
+                    <button class="signbtn">Sign up</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>Spotify playlists</h1>
+                <div class="card-container">
+                </div>
+            </div>
+
+            <div class="playbar invert">
+                <div class="seekbar">
+                    <div class="circle">
+                        
+                    </div>
+                </div>
+                <div class="maindetails">
+                <div class="songInfo"></div>
+                <div class="songbtns">
+                    <img id="pre" src="pre.svg" alt="">
+                    <img id="play" src="play.svg" alt="">
+                    <img id="next" src="next.svg" alt="">
+                </div>
+                <div class="timvol">
+                <div class="songtime"></div>
+                <div class="volume">
+                    <img src="volume.svg" alt="">
+                    <div class="range">
+                    <input type="range" name="volume" value="50">
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
